@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main() {
+	long long int n;
+	scanf("%lld", &n);
+	printf("%lld\n", n);
+	printf("%lld nota(s) de R$ 100,00\n", n / 100);
+	n %= 100;
+	printf("%lld nota(s) de R$ 50,00\n", n / 50);
+	n %= 50;
+	printf("%lld nota(s) de R$ 20,00\n", n / 20);
+	n %= 20;
+	printf("%lld nota(s) de R$ 10,00\n", n / 10);
+	n %= 10;
+	printf("%lld nota(s) de R$ 5,00\n", n / 5);
+	n %= 5;
+	printf("%lld nota(s) de R$ 2,00\n", n / 2);
+	n %= 2;
+	printf("%lld nota(s) de R$ 1,00\n", n / 1);
+	return 0;
+}
